@@ -74,8 +74,8 @@ input, button {
 }
 
 .topbar {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   background-color: #2d3032;
 }
 
@@ -105,7 +105,7 @@ input, button {
 
 .topbar__menu-item {
   display: block;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .topbar__menu-item a {
