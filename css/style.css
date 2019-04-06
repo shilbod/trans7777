@@ -78,6 +78,214 @@ input, button {
   }
 }
 
+svg {
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.plate {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  -webkit-filter: url(#gooeyness);
+          filter: url(#gooeyness);
+}
+
+.x {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.line {
+  fill: none;
+  stroke: #2d3032;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms, -webkit-transform 500ms 200ms;
+}
+
+.x .line {
+  stroke-width: 4px;
+}
+
+/* First plate */
+.plate1 .line2 {
+  stroke-dasharray: 40 200;
+  stroke-dashoffset: 0px;
+}
+
+.plate1 .line3 {
+  stroke-dasharray: 40 179;
+  stroke-dashoffset: 0px;
+}
+
+.active {
+  background-color: #2d3032;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.active .line {
+  stroke: #fff;
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
+}
+
+.active.plate1 .line1 {
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 500ms 100ms;
+  transition: -webkit-transform 500ms 100ms;
+  transition: transform 500ms 100ms;
+  transition: transform 500ms 100ms, -webkit-transform 500ms 100ms;
+}
+
+.active.plate1 .line2 {
+  stroke-dasharray: 5px 200;
+  stroke-dashoffset: -164px;
+}
+
+.active.plate1 .line3 {
+  stroke-dasharray: 5px 179;
+  stroke-dashoffset: -142px;
+}
+
+.active .x {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms 350ms;
+  transition: -webkit-transform 400ms 350ms;
+  transition: transform 400ms 350ms;
+  transition: transform 400ms 350ms, -webkit-transform 400ms 350ms;
+}
+
+@media (max-width: 575px) {
+  svg {
+    width: 50px;
+  }
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 .topbar {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -406,14 +614,6 @@ input, button {
   }
   .navbar-wrap {
     height: 60px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .navbar__logo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
   }
   .navbar__logo-img {
     width: 140px;
@@ -423,6 +623,7 @@ input, button {
   }
   .navbar__mobile {
     margin-right: 3%;
+    margin-left: auto;
   }
   .navbar__mobile-phone {
     font-size: 16px;
@@ -454,15 +655,20 @@ input, button {
     display: none;
   }
   .navbar__button-mobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #edb72b;
+    color: #fff;
     text-decoration: none;
     width: 60px;
     height: 100%;
-    padding: 0;
-    border-radius: 0;
-  }
-  .navbar__button-mobile a .fa-phone {
-    color: #fff;
   }
 }
 
@@ -495,112 +701,6 @@ input, button {
   .navbar__button-nav {
     height: 60px;
     font-size: 18px;
-  }
-}
-
-svg {
-  height: 100%;
-  width: 60px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.plate {
-  height: 100%;
-  width: 100%;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.burger {
-  -webkit-filter: url(#gooeyness);
-          filter: url(#gooeyness);
-}
-
-.x {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-}
-
-.line {
-  fill: none;
-  stroke: #2d3032;
-  stroke-width: 4px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  -webkit-transform-origin: 50%;
-          transform-origin: 50%;
-  -webkit-transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
-  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
-  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
-  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms, -webkit-transform 500ms 200ms;
-}
-
-.x .line {
-  stroke-width: 4px;
-}
-
-/* First plate */
-.plate1 .line2 {
-  stroke-dasharray: 40 200;
-  stroke-dashoffset: 0px;
-}
-
-.plate1 .line3 {
-  stroke-dasharray: 40 179;
-  stroke-dashoffset: 0px;
-}
-
-.active {
-  background-color: #2d3032;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.active .line {
-  stroke: #fff;
-  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
-  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
-  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
-  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
-}
-
-.active.plate1 .line1 {
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transition: -webkit-transform 500ms 100ms;
-  transition: -webkit-transform 500ms 100ms;
-  transition: transform 500ms 100ms;
-  transition: transform 500ms 100ms, -webkit-transform 500ms 100ms;
-}
-
-.active.plate1 .line2 {
-  stroke-dasharray: 5px 200;
-  stroke-dashoffset: -164px;
-}
-
-.active.plate1 .line3 {
-  stroke-dasharray: 5px 179;
-  stroke-dashoffset: -142px;
-}
-
-.active .x {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 400ms 350ms;
-  transition: -webkit-transform 400ms 350ms;
-  transition: transform 400ms 350ms;
-  transition: transform 400ms 350ms, -webkit-transform 400ms 350ms;
-}
-
-@media (max-width: 575px) {
-  svg {
-    width: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

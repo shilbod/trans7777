@@ -186,15 +186,14 @@
     padding: 0
     &-wrap
       height: 60px
-      justify-content: flex-end
     &__logo
-      flex: 1
       &-img
         width: 140px
     &__menu
       display: none
     &__mobile
       margin-right: 3%
+      margin-left: auto
       &-phone
         font-size: 16px
     &__button
@@ -221,15 +220,14 @@
     &__button
       display: none
     &__button-mobile
-      display: block
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: $color-el
+      color: #fff
       text-decoration: none
       width: 60px
       height: 100%
-      padding: 0
-      border-radius: 0
-      a
-        .fa-phone
-          color: #fff
         
 @media (max-width: 575px)
   .navbar
