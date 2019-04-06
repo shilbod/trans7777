@@ -8,19 +8,18 @@ body
 input, button
   outline: 0
 
-.navbar
-  &__button
-    display: block
-    height: 45px
-    border: none
-    border-radius: 20px
-    padding: 0 22px
-    color: #fff
-    +semibold
-    text-decoration: none
-    cursor: pointer
-    background-color: $color-el
+.button
+  display: block
+  height: 45px
+  border: none
+  border-radius: 20px
+  padding: 0 22px
+  color: #fff
+  +semibold
+  text-decoration: none
+  cursor: pointer
+  background-color: $color-el
+  transition: $transition-all
+  &:hover
+    background-color: darken($color-el, 10%)
     transition: $transition-all
-    &:hover
-      background-color: darken($color-el, 10%)
-      transition: $transition-all

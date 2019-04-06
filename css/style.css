@@ -40,7 +40,7 @@ input, button {
   outline: 0;
 }
 
-.navbar__button {
+.button {
   display: block;
   height: 45px;
   border: none;
@@ -55,7 +55,7 @@ input, button {
   transition: all 0.3s ease;
 }
 
-.navbar__button:hover {
+.button:hover {
   background-color: #d39d12;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -69,8 +69,13 @@ input, button {
 .container {
   max-width: 1200px;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
 }
 
 .topbar {
@@ -209,6 +214,7 @@ input, button {
           box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.15);
   position: -webkit-sticky;
   position: sticky;
+  z-index: 100;
 }
 
 .navbar-wrap {
@@ -342,5 +348,259 @@ input, button {
   color: #edb72b;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.navbar__button-mobile, .navbar__menu-button {
+  display: none;
+}
+
+.navbar__nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  border-top: 1px #e0e2e4 solid;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.navbar__nav-mobile {
+  list-style-type: none;
+  font-size: 0;
+  padding: 20px 0;
+}
+
+.navbar__nav-item {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 42px;
+  font-family: 'Exo 2.0 Semibold', sans-serif;
+  text-align: center;
+}
+
+.navbar__nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #2d3032;
+  height: 100%;
+}
+
+.navbar__button-nav {
+  width: 100%;
+  border-radius: 0;
+  height: 60px;
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .topbar__menu-item {
+    margin-right: 20px;
+  }
+  .topbar__mail {
+    margin-right: 0;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar-wrap {
+    height: 60px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar__logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .navbar__logo-img {
+    width: 140px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__mobile {
+    margin-right: 3%;
+  }
+  .navbar__mobile-phone {
+    font-size: 16px;
+  }
+  .navbar__button {
+    height: 100%;
+    border-radius: 0;
+  }
+  .navbar__menu-button {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+  .navbar__mobile-icon {
+    display: none;
+  }
+  .navbar__button {
+    display: none;
+  }
+  .navbar__button-mobile {
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+  .navbar__button-mobile a .fa-phone {
+    color: #fff;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-wrap {
+    height: 50px;
+  }
+  .navbar .container {
+    padding-right: 0;
+  }
+  .navbar__mobile-wrap {
+    display: none;
+  }
+  .navbar__menu-button, .navbar__button-mobile {
+    width: 50px;
+  }
+  .navbar__logo-img {
+    width: 110px;
+  }
+  .navbar__logo-description {
+    font-size: 10px;
+    line-height: 1;
+  }
+  .navbar__nav-item {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Exo 2.0 Semibold', sans-serif;
+    text-align: center;
+  }
+  .navbar__button-nav {
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+svg {
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.plate {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  -webkit-filter: url(#gooeyness);
+          filter: url(#gooeyness);
+}
+
+.x {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.line {
+  fill: none;
+  stroke: #2d3032;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms, -webkit-transform 500ms 200ms;
+}
+
+.x .line {
+  stroke-width: 4px;
+}
+
+/* First plate */
+.plate1 .line2 {
+  stroke-dasharray: 40 200;
+  stroke-dashoffset: 0px;
+}
+
+.plate1 .line3 {
+  stroke-dasharray: 40 179;
+  stroke-dashoffset: 0px;
+}
+
+.active {
+  background-color: #2d3032;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.active .line {
+  stroke: #fff;
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
+}
+
+.active.plate1 .line1 {
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 500ms 100ms;
+  transition: -webkit-transform 500ms 100ms;
+  transition: transform 500ms 100ms;
+  transition: transform 500ms 100ms, -webkit-transform 500ms 100ms;
+}
+
+.active.plate1 .line2 {
+  stroke-dasharray: 5px 200;
+  stroke-dashoffset: -164px;
+}
+
+.active.plate1 .line3 {
+  stroke-dasharray: 5px 179;
+  stroke-dashoffset: -142px;
+}
+
+.active .x {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms 350ms;
+  transition: -webkit-transform 400ms 350ms;
+  transition: transform 400ms 350ms;
+  transition: transform 400ms 350ms, -webkit-transform 400ms 350ms;
+}
+
+@media (max-width: 575px) {
+  svg {
+    width: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
