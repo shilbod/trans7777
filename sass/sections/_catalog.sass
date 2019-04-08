@@ -44,15 +44,18 @@
 .button-about, .button-about-2
   height: 45px
   border: 2px solid $color-el
-  padding: 0 18px
+  border-radius: 20px
+  padding: 11px 18px
   background-color: transparent
   +semibold
+  transition: $transition-all
   &:hover
     color: #fff
     background-color: $color-el
     transition: $transition-all
 .button-about-2
-  padding: 0 32px
+  display: inline-block
+  padding: 11px 32px
 
 @media (max-width: 991px)
   .catalog
@@ -72,7 +75,7 @@
     &-price
       font-size: 20px
   .button-about
-    padding: 0 16px
+    padding: 11px 16px
 
 @media (max-width: 767px)
   .catalog
@@ -109,7 +112,8 @@
       margin-bottom: 10px
   .button-about, .button-about-2
     height: 40px
+    padding: 8px 16px
   .button-about-2
-    padding: 0 16px
+    padding: 8px 16px
 
   
