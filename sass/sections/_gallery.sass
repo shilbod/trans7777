@@ -1,0 +1,85 @@
+.gallery
+  &-wrap
+    height: 450px
+    display: flex
+    justify-content: space-between
+  &-vertical
+    width: 24.5%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__item
+      display: block
+      position: relative
+      width: 100%
+      height: 49.3%
+      background-color: $text-color
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: $transition-all
+        &:hover
+          opacity: .4
+          transition: $transition-all
+      i
+        display: none
+        position: absolute
+        color: #fff
+        top: 35%
+        left: 43%
+  &-main
+    width: 50%
+    &__item
+      display: block
+      position: relative
+      width: 100%
+      height: 100%
+      background-color: $text-color
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: $transition-all
+        &:hover
+          opacity: .4
+          transition: $transition-all
+      i
+        display: none
+        position: absolute
+        color: #fff
+        top: 43%
+        left: 45%
+
+@media (max-width: 991px)
+  .gallery
+    &-wrap
+      height: 360px
+
+@media (max-width: 767px)
+  .gallery
+    &-wrap
+      height: 100%
+      justify-content: flex-start
+      flex-direction: column
+    &-vertical
+      width: 100%
+      height: 180px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      &__item
+        width: 49.5%
+        height: 100%
+    &-main
+      width: 100%
+      height: 320px
+      margin: 1% 0
+
+@media (max-width: 575px)
+  .gallery
+    &-vertical
+      height: 130px
+    &-main
+      height: 180px

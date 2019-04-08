@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="libs/fontawesome/all.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 <body>
   
@@ -373,25 +374,25 @@
         <h2 class="section-title section__title">Наши преимущества</h2>
         <div class="feature-wrap">
           <div class="feature-wrap__item">
-              <img src="img/contract.svg" class="feature-icon">
+              <img src="img/contract.svg" class="feature-icon" alt="Заключение договоров">
               <span class="feature-title">Заключение <br><span>договоров</span></span>
               <span class="feature-subtitle">Заключение договоров, наличный, безналичный расчет, предоставление отчетных документов.</span>
             </div>
             <!-- /.feature-wrap__item -->
             <div class="feature-wrap__item">
-              <img src="img/mechanic.svg" class="feature-icon">
+              <img src="img/mechanic.svg" class="feature-icon" alt="Комплекс услуг по аренде">
               <span class="feature-title">Комплекс услуг <br><span>по аренде</span></span>
               <span class="feature-subtitle">Для строительных объектов предоставляем компоекс услуг по аренде, в случае выхода из строя единицы мы в течении часа заменим её на другую.</span>
             </div>
             <!-- /.feature-wrap__item -->
             <div class="feature-wrap__item">
-              <img src="img/price-label.png" class="feature-icon">
+              <img src="img/price-label.png" class="feature-icon" alt="Адекватные цены">
               <span class="feature-title">Адекватные <br><span>цены</span></span>
               <span class="feature-subtitle">Оставив заявку на сайте вы можете расчитывать на адекватную цену за работу.</span>
             </div>
             <!-- /.feature-wrap__item -->
             <div class="feature-wrap__item">
-              <img src="img/conversation.svg" class="feature-icon">
+              <img src="img/conversation.svg" class="feature-icon" alt="Работаем напрямую">
               <span class="feature-title">Работаем <br><span>напрямую</span></span>
               <span class="feature-subtitle">Вы работаете с нами на прямую по нашим ценам, что дает Вам право на дополнительную скидку по договоренности.</span>
             </div>
@@ -403,8 +404,46 @@
   </section>
   <!-- /.section feature -->
 
+  <section class="section gallery">
+    <div class="container">
+        <h2 class="section-title section__title">Наша техника в деле</h2>
+        <div class="gallery-wrap">
+          <div class="gallery-vertical">
+            <a href="img/gallery-1.jpg" class="gallery-vertical__item" data-fancybox="images">
+              <img src="img/gallery-1.jpg" alt="">
+              <i class="far fa-3x fa-plus-square"></i>
+            </a>
+            <a href="img/gallery-2.jpg" class="gallery-vertical__item" data-fancybox="images">
+              <img src="img/gallery-2.jpg" alt="">
+              <i class="far fa-3x fa-plus-square"></i>
+            </a>
+          </div>
+          <div class="gallery-main">
+            <a href="img/gallery-center.jpg" class="gallery-main__item" data-fancybox="images">
+              <img src="img/gallery-center.jpg" alt="">
+              <i class="far fa-3x fa-plus-square"></i>
+            </a>
+          </div>
+          <div class="gallery-vertical">
+            <a href="img/gallery-3.jpg" class="gallery-vertical__item" data-fancybox="images">
+              <img src="img/gallery-3.jpg" alt="">
+              <i class="far fa-3x fa-plus-square"></i>
+            </a>
+            <a href="img/gallery-4.jpg" class="gallery-vertical__item" data-fancybox="images">
+              <img src="img/gallery-4.jpg" alt="">
+              <i class="far fa-3x fa-plus-square"></i>
+            </a>
+          </div>
+        </div>
+        <!-- /.gallery-wrap -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section gallery -->
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script  src="js/jquery.fancybox.min.js"></script>
   <script  src="js/youtube.js"></script>
   <script>
     $(document).ready(function() {
