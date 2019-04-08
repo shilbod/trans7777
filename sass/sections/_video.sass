@@ -1,0 +1,59 @@
+.video
+  padding-top: 0
+  padding-bottom: 60px
+  &-about
+    width: 44%
+    .section
+      &__title
+        margin-bottom: 20px
+        span
+          color: $color-el
+          +bold
+      &__subtitle
+        margin-bottom: 10px
+      &-subtitle
+        font-size: 20px
+        line-height: 1.2
+        +semibold
+    &-text
+      display: block
+      line-height: 1.4
+    &__text
+      margin-bottom: 30px
+    &-wrap
+      display: flex
+      justify-content: space-between
+  &-youtube
+    width: 53%
+.button-video
+  display: inline-block
+  height: 55px
+  border: none
+  text-decoration: none
+  padding: 15px 22px
+  border-radius: 20px
+  cursor: pointer
+  font-size: 18px
+  color: #fff
+  +semibold
+  background-color: $color-el
+  transition: $transition-all
+  &:hover
+    background-color: darken($color-el, 10%)
+    transition: $transition-all
+
+@media (max-width: 991px)
+  .video
+    padding-bottom: 40px
+    &-about
+      width: 100%
+      .section
+        &-subtitle
+          font-size: 18px
+      &-wrap
+        display: flex
+        justify-content: flex
+        flex-direction: column-reverse
+    &-youtube
+      width: 100%
+      margin-bottom: 20px
