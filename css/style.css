@@ -1684,4 +1684,137 @@ svg {
     height: 180px;
   }
 }
+
+.comment {
+  padding-top: 0;
+}
+
+.comment-wrap {
+  margin: 0 -15px;
+}
+
+.comment-item {
+  margin: 0 15px;
+  padding: 30px 30px;
+  border-radius: 5px;
+  border: 1px #c6c9cb solid;
+}
+
+.comment-persone-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.comment-text {
+  line-height: 1.4;
+}
+
+.comment__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background-color: #fff;
+  z-index: 20;
+  top: 0;
+  right: 15px;
+}
+
+.persone-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  margin-right: 20px;
+}
+
+.persone-name {
+  font-size: 20px;
+  font-family: 'Exo 2.0 Semibold', sans-serif;
+}
+
+.arrow-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 70px;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.arrow-comment-line {
+  width: 2px;
+  height: 30px;
+  background-color: #2d3032;
+}
+
+.arrow-comment img {
+  height: 40px;
+}
+
+@media (max-width: 1199px) {
+  .comment-wrap {
+    margin: 0 -5px;
+  }
+  .comment-item {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .arrow-comment {
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .comment-item {
+    padding: 20px 20px;
+  }
+  .comment-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .arrow-comment {
+    width: 60px;
+  }
+  .arrow-comment img {
+    height: 35px;
+  }
+  .persone-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .comment-item {
+    padding: 15px 15px;
+  }
+  .comment__arrow {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
