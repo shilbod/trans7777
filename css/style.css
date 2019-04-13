@@ -36,7 +36,7 @@ body {
   font-size: 16px;
 }
 
-input, button {
+input, button, input:active, select, select:active {
   outline: 0;
 }
 
@@ -1816,5 +1816,229 @@ svg {
   .comment__arrow {
     display: none;
   }
+}
+
+.form {
+  background-color: #f7f7f8;
+}
+
+.form .section-title {
+  font-size: 42px;
+  line-height: 1;
+  font-family: 'Exo 2.0 Bold', sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form .section-title span {
+  color: #edb72b;
+}
+
+.form-wrap {
+  background-color: #fff;
+  padding: 60px 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px 2px rgba(45, 48, 50, 0.1);
+          box-shadow: 0 0 20px 2px rgba(45, 48, 50, 0.1);
+}
+
+.form-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-page .field {
+  display: block;
+  height: 60px;
+  width: 23%;
+  padding: 0 20px;
+  border: 2px #c6c9cb solid;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: 'Exo 2.0 Medium', sans-serif;
+}
+
+.form-button {
+  height: 60px;
+  width: 23%;
+  font-size: 18px;
+}
+
+.form-subtitle {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .form .section-title {
+    font-size: 36px;
+  }
+  .form-wrap {
+    padding: 40px 40px;
+  }
+  .form-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-page .field {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .form-button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .form .section-title {
+    font-size: 32px;
+  }
+  .form-wrap {
+    padding: 40px 70px;
+  }
+  .form-wrap .field {
+    width: 100%;
+  }
+  .form-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .form .section-title {
+    font-size: 28px;
+  }
+  .form-wrap {
+    padding: 25px 20px;
+  }
+  .form-wrap .field {
+    height: 50px;
+  }
+  .form-button {
+    height: 50px;
+  }
+}
+
+.map-wrap {
+  height: 400px;
+  border: 1px #abb0b3 solid;
+  border-bottom: none;
+}
+
+.map-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px #abb0b3 solid;
+}
+
+.map-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  padding: 40px 0;
+}
+
+.map-info-title {
+  margin-bottom: 10px;
+  font-family: 'Exo 2.0 Medium', sans-serif;
+}
+
+.map-info-mobile {
+  line-height: 1.3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.map-info-mobile:hover {
+  color: #edb72b;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .map-wrap {
+    height: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .map-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map-info__item {
+    font-size: 16px;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .map-wrap {
+    height: 240px;
+  }
+  .map-info__item {
+    padding: 15px 0;
+  }
+}
+
+.page-description {
+  padding-top: 0;
+}
+
+.page-description .section__title {
+  margin-bottom: 40px;
+}
+
+.description {
+  line-height: 1.4;
+}
+
+.description-h3 {
+  margin: 25px 0;
+  font-size: 20px;
+}
+
+.page-description {
+  padding-top: 0;
+}
+
+.page-description .section__title {
+  margin-bottom: 40px;
+}
+
+.description {
+  line-height: 1.4;
+}
+
+.description-h3 {
+  margin: 25px 0;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

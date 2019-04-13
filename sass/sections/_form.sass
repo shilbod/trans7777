@@ -1,0 +1,77 @@
+.form
+  background-color: $background-gray
+  .section
+    &-title
+      font-size: 42px
+      line-height: 1
+      +bold
+      text-align: center
+      margin-bottom: 40px
+      span
+        color: $color-el
+  &-wrap
+    background-color: #fff
+    padding: 60px 40px
+    margin-bottom: 20px
+    border-radius: 10px
+    box-shadow: 0 0 20px 2px rgba($text-color,0.1)
+  &-page
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .field
+      display: block
+      height: 60px
+      width: 23%
+      padding: 0 20px
+      border: 2px lighten($text-color, 60%) solid
+      border-radius: 20px
+      font-size: 18px
+      +medium
+  &-button
+    height: 60px
+    width: 23%
+    font-size: 18px
+  &-subtitle
+    display: block
+    font-size: 14px
+    text-align: center
+
+@media (max-width: 991px)
+  .form
+    .section
+      &-title
+        font-size: 36px
+    &-wrap
+      padding: 40px 40px
+    &-page
+      flex-direction: column
+      .field
+        width: 50%
+        margin-bottom: 10px
+    &-button
+      width: 50%
+
+@media (max-width: 767px)
+  .form
+    .section
+      &-title
+        font-size: 32px
+    &-wrap
+      padding: 40px 70px
+      .field
+        width: 100%
+    &-button
+      width: 100%
+
+@media (max-width: 575px)
+  .form
+    .section
+      &-title
+        font-size: 28px
+    &-wrap
+      padding: 25px 20px
+      .field
+        height: 50px
+    &-button
+      height: 50px
