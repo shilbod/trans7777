@@ -1,0 +1,115 @@
+.menu-large
+  padding-top: 0
+  padding-bottom: 60px
+  &-wrap
+    display: flex
+    justify-content: space-around
+    border: 1px lighten($text-color, 50%) solid
+    border-left: none
+  &__item
+    flex: 1
+    padding: 30px
+    border-left: 1px lighten($text-color, 50%) solid
+    &:hover
+      background-repeat: no-repeat
+      background-size: cover
+      &:nth-child(1)
+        background-image: linear-gradient( rgba($text-color, 0.8), rgba($text-color, 0.8) ), url(../img/menu-bot-item-1.jpg)
+      &:nth-child(2)
+        background-image: linear-gradient( rgba($text-color, 0.8), rgba($text-color, 0.8) ), url(../img/menu-bot-item-2.jpg)
+      &:nth-child(3)
+        background-image: linear-gradient( rgba($text-color, 0.8), rgba($text-color, 0.8) ), url(../img/menu-bot-item-3.jpg)
+      transition: $transition-all
+      .menu-large-icon
+        opacity: 0
+        transition: $transition-all
+      .menu-large-title
+        color: #fff
+        transition: $transition-all
+      .menu-large-title-icon
+        background-color: $color-el
+        border-color: $color-el
+        transition: $transition-all
+  &-icon
+    width: 80px
+    margin-bottom: 10px
+    transition: $transition-all
+  &-title-wrap
+    display: flex
+    justify-content: space-between
+  &-title
+    width: 60%
+    font-size: 18px
+    line-height: 1.2
+    +semibold
+    transition: $transition-all
+    &-icon
+      display: flex
+      width: 50px
+      height: 50px
+      padding: 5px
+      border: 1px lighten($text-color, 50%) solid
+      border-radius: 50px
+      img
+        width: 38px
+
+@media (max-width: 991px)
+  .menu-large
+    padding-bottom: 40px
+    &-wrap
+      border: none
+    &__item
+      padding: 30px 15px
+      border-left: 2px #fff solid
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: 50% 50%
+      &:nth-child(1)
+        background-image: linear-gradient( rgba($text-color, 0.8), rgba($text-color, 0.8) ), url(../img/menu-bot-item-1.jpg)
+      &:nth-child(2)
+        background-image: linear-gradient( rgba($text-color, 0.8), rgba($text-color, 0.8) ), url(../img/menu-bot-item-2.jpg)
+      &:nth-child(3)
+        background-image: linear-gradient( rgba($text-color, 0.8), rgba($text-color, 0.8) ), url(../img/menu-bot-item-3.jpg)
+    &-icon
+      display: none
+    &-title
+      width: 80%
+      color: #fff
+      &-icon
+        width: 40px
+        height: 40px
+        background-color: $color-el
+        border-color: $color-el
+        img
+          width: 30px
+
+@media (max-width: 767px)
+  .menu-large
+    &-wrap
+      display: flex
+      flex-direction: column
+    &__item
+      padding: 30px 30px
+      border-left: none
+      &:nth-child(1), &:nth-child(2)
+        margin-bottom: 5px
+    &-title-wrap
+      display: flex
+      align-items: center
+
+@media (max-width: 575px)
+  .menu-large
+    &-wrap
+      display: flex
+      flex-direction: column
+    &__item
+      padding: 30px 20px
+      border-left: none
+      &:nth-child(1), &:nth-child(2)
+        margin-bottom: 5px
+    &-title-wrap
+      display: flex
+      align-items: center
+    &-title
+      width: 70%
+        

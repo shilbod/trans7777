@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="msapplication-TileColor" content="#edb72b">
+  <meta name="theme-color" content="#edb72b">
   <title>Аренда спецтехники</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="libs/fontawesome/all.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
   
@@ -83,7 +87,7 @@
               <a href="tel:+375447777436" class="navbar__mobile-phone">+375 (44) 7777-436</a>
             </div>
           </div>
-          <button class="button navbar__button">Быстрый заказ</button>
+          <button class="button navbar__button" data-fancybox data-src="#popup" href="javascript:;">Быстрый заказ</button>
           <a class="navbar__button-mobile" href="tel:+375447777304"><i class="fas fa-phone fa-lg fa-flip-horizontal"></i></a>
           <div class="navbar__menu-button">
             <div class="plate plate1" onclick="this.classList.toggle('active')">
@@ -142,7 +146,7 @@
               <h1 class="slider-title slide__title">Выполнение земляных работ любой сложности в Речице</h1>
               <span class="slider-subtitle slide__subtitle">Наши компетентные сотрудники справятся с любой поставленной задачей, выполнят все работы в самые короткие сроки. </span>
               <span class="slider-price slide__price">Цена:<span class="slider-price-color"> от 30 руб./час</span></span>
-              <button class="button slider-button slide__button">Заказать технику</button>
+              <button class="button slider-button slide__button" data-fancybox data-src="#popup" href="javascript:;">Заказать технику</button>
             </div>
             <img src="img/slide-1.jpg" alt="Выполнение земляных работ любой сложности в Речице" class="slider-img">
           </div>
@@ -155,7 +159,7 @@
               <h1 class="slider-title slide__title">Купить цемент недорого с доставкой в Речице</h1>
               <span class="slider-subtitle slide__subtitle">В нашей компании вы можете приобрести цемент оптом и в розницу. Купить цемент с добавками и без: цены, сделать заказ онлайн.</span>
               <span class="slider-price slide__price">Цена:<span class="slider-price-color"> от 30 руб./час</span></span>
-              <button class="button slider-button slide__button">Заказать технику</button>
+              <button class="button slider-button slide__button" data-fancybox data-src="#popup" href="javascript:;">Заказать технику</button>
             </div>
             <img src="img/slide-2.jpg" alt="Выполнение земляных работ любой сложности в Речице" class="slider-img">
           </div>
@@ -168,7 +172,7 @@
               <h1 class="slider-title slide__title">Доставка и продажа сыпучих материалов в Речице</h1>
               <span class="slider-subtitle slide__subtitle">Наша компания доставляет и продает любые сыпучие материалы (песок, щебень, грунт, чернозём, отсев и т.д.).</span>
               <span class="slider-price slide__price">Цена:<span class="slider-price-color"> от 30 руб./час</span></span>
-              <button class="button slider-button slide__button">Заказать технику</button>
+              <button class="button slider-button slide__button" data-fancybox data-src="#popup" href="javascript:;">Заказать технику</button>
             </div>
             <img src="img/slide-3.jpg" alt="Доставка и продажа сыпучих материалов в Речице" class="slider-img">
           </div>
@@ -181,7 +185,7 @@
               <h1 class="slider-title slide__title">Пассажирские перевозки на комфортных автобусах</h1>
               <span class="slider-subtitle slide__subtitle">Пассажирские перевозки на комфортабельных автобусах Mersedes-benz с удобными местами для сидения, кондиционер, телевизор до 20 мест РБ, РФ.</span>
               <span class="slider-price slide__price">Цена:<span class="slider-price-color"> от 30 руб./час</span></span>
-              <button class="button slider-button slide__button">Заказать технику</button>
+              <button class="button slider-button slide__button" data-fancybox data-src="#popup" href="javascript:;">Заказать технику</button>
             </div>
             <img src="img/slide-4.jpg" alt="Пассажирские перевозки на комфортных автобусах" class="slider-img">
           </div>
@@ -194,7 +198,7 @@
               <h1 class="slider-title slide__title">Аренда экскаватора TEREX в Речице</h1>
               <span class="slider-subtitle slide__subtitle">Выкапывание траншей, рвов и формирование котлованов. Расчистка участка. Демонтаж старых строений и другие виды работ.</span>
               <span class="slider-price slide__price">Цена:<span class="slider-price-color"> от 30 руб./час</span></span>
-              <button class="button slider-button slide__button">Заказать технику</button>
+              <button class="button slider-button slide__button" data-fancybox data-src="#popup" href="javascript:;">Заказать технику</button>
             </div>
             <img src="img/slide-5.jpg" alt="Аренда экскаватора TEREX в Речице" class="slider-img">
           </div>
@@ -305,7 +309,7 @@
       <div class="order-wrap">
         <h2 class="section-title section__title">Заказать спецтехнику в Речице</h2>
         <span class="order-subtitle">Нет времени искать? Мы предложим лучшие варианты для вас! Оставьте данные, мы перезвоним!</span>
-        <button class="button order-button">Заказать обратный звонок</button>
+        <button class="button order-button" data-fancybox data-src="#popup" href="javascript:;">Заказать обратный звонок</button>
       </div>
       <!-- /.order-wrap -->
     </div>
@@ -490,6 +494,13 @@
       <h2 class="section-title section__title">Оставьте заявку сейчас и <br><span>получите лучшую цену</span></h2>
       <div class="form-wrap">
         <form class="form-page">
+
+          <!-- Hidden Required Fields -->
+			    <input type="hidden" name="project_name" value="Транс 7777">
+			    <input type="hidden" name="admin_email" value="trans-7777@yandex.by">
+			    <input type="hidden" name="form_subject" value="Новая заявка (глав)">
+			    <!-- END Hidden Required Fields -->
+
           <input class="field input" data-name="Name" id="name" type="text" name="Имя" maxlength="56" placeholder="Ваше имя" required>
           <input class="field input" data-name="Phone" id="phone" type="text" name="Номер телефона" maxlength="19" placeholder="+375 29 123 45 67" required>
           <select class="field input" data-name="Service" name="Услуга">
@@ -549,7 +560,29 @@
   <section class="section menu-large">
     <div class="container">
       <div class="menu-large-wrap">
-
+        <a href="#" class="menu-large__item">
+          <img src="../img/truck-crane.svg" alt="truck" class="menu-large-icon">
+          <div class="menu-large-title-wrap">
+            <span class="menu-large-title">Перейти в каталог техники в аренду</span>
+            <div class="menu-large-title-icon"><img alt="next" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVHhe7ds7SiRRHEbxFhFEU1+jTmRgYuJrxscGTASTcQmCC9DEDbgFc8ENmBgbm41vc0HwlZo4p4SBpqlbkdz/hTo/OEFlF77uKpqmOpIkSZIkSZIkSZIkSZIkSfpmg3RKH3RGo6RA2/TZ1V9ylECb1D3I/1HGSAH66JgcpSD9dEK9o1ySowRpGmWcFCA1yhU5SpCmUSZIARylQKlRrslRgjSN8oMUwFEKlBrlhiZJARylQKlRbslRgjSNMkUK4CgFSo1yR44SpGmUaVKA1Cj35ChBUqM8UFGjDNMf2mlBu/RIdaP8pHADdEG9B2xj1e0r/EE/R3WHa2vnFGqI6r7CbeyNflG4GTqko5ZU9wF8p3VSZvvkGIVIjbFGyqxujOqZ4RgBHKMgqTFWSZmlxlghZeYYBUmN8ZuUWWqMIn6Bt01qjGVSZqkxlkiZ1Y3xSo4RwDEKkhpjkZRZ3Rgv5BgBHKMgqTEWSJntUe8Yz+QYATbIMQpyQL1jzJOCzFL1d2s1xhM5RgGqdwW3aOTrSpIkSZIkSZIkSZIkSZIkqeU6nX+M5fKytvZh6QAAAABJRU5ErkJggg=="></div>
+          </div>
+        </a> <!-- /.menu-large__item -->
+        <a href="#" class="menu-large__item">
+          <img src="../img/worker.svg" alt="worker" class="menu-large-icon">
+          <div class="menu-large-title-wrap">
+            <span class="menu-large-title">Выбрать вид услуг или работ</span>
+            <div class="menu-large-title-icon"><img alt="next" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVHhe7ds7SiRRHEbxFhFEU1+jTmRgYuJrxscGTASTcQmCC9DEDbgFc8ENmBgbm41vc0HwlZo4p4SBpqlbkdz/hTo/OEFlF77uKpqmOpIkSZIkSZIkSZIkSZIkSfpmg3RKH3RGo6RA2/TZ1V9ylECb1D3I/1HGSAH66JgcpSD9dEK9o1ySowRpGmWcFCA1yhU5SpCmUSZIARylQKlRrslRgjSN8oMUwFEKlBrlhiZJARylQKlRbslRgjSNMkUK4CgFSo1yR44SpGmUaVKA1Cj35ChBUqM8UFGjDNMf2mlBu/RIdaP8pHADdEG9B2xj1e0r/EE/R3WHa2vnFGqI6r7CbeyNflG4GTqko5ZU9wF8p3VSZvvkGIVIjbFGyqxujOqZ4RgBHKMgqTFWSZmlxlghZeYYBUmN8ZuUWWqMIn6Bt01qjGVSZqkxlkiZ1Y3xSo4RwDEKkhpjkZRZ3Rgv5BgBHKMgqTEWSJntUe8Yz+QYATbIMQpyQL1jzJOCzFL1d2s1xhM5RgGqdwW3aOTrSpIkSZIkSZIkSZIkSZIkqeU6nX+M5fKytvZh6QAAAABJRU5ErkJggg=="></div>
+          </div>
+        </a>
+        <!-- /.menu-large__item -->
+        <a data-fancybox data-src="#popup" href="javascript:;" class="menu-large__item">
+          <img src="../img/smartphone.svg" alt="smartphone" class="menu-large-icon">
+          <div class="menu-large-title-wrap">
+            <span class="menu-large-title">Заказать аренду техники или работ</span>
+            <div class="menu-large-title-icon"><img alt="next" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVHhe7ds7SiRRHEbxFhFEU1+jTmRgYuJrxscGTASTcQmCC9DEDbgFc8ENmBgbm41vc0HwlZo4p4SBpqlbkdz/hTo/OEFlF77uKpqmOpIkSZIkSZIkSZIkSZIkSfpmg3RKH3RGo6RA2/TZ1V9ylECb1D3I/1HGSAH66JgcpSD9dEK9o1ySowRpGmWcFCA1yhU5SpCmUSZIARylQKlRrslRgjSN8oMUwFEKlBrlhiZJARylQKlRbslRgjSNMkUK4CgFSo1yR44SpGmUaVKA1Cj35ChBUqM8UFGjDNMf2mlBu/RIdaP8pHADdEG9B2xj1e0r/EE/R3WHa2vnFGqI6r7CbeyNflG4GTqko5ZU9wF8p3VSZvvkGIVIjbFGyqxujOqZ4RgBHKMgqTFWSZmlxlghZeYYBUmN8ZuUWWqMIn6Bt01qjGVSZqkxlkiZ1Y3xSo4RwDEKkhpjkZRZ3Rgv5BgBHKMgqTEWSJntUe8Yz+QYATbIMQpyQL1jzJOCzFL1d2s1xhM5RgGqdwW3aOTrSpIkSZIkSZIkSZIkSZIkqeU6nX+M5fKytvZh6QAAAABJRU5ErkJggg=="></div>
+          </div>
+        </a>
+        <!-- /.menu-large__item -->
       </div>
       <!-- /.menu-large-wrap -->
     </div>
@@ -557,15 +590,54 @@
   </section>
   <!-- /.section menu-large -->
 
+  <footer class="footer">
+    <div class="container">
+
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- popup -->
+
+  <div id="popup" class="popup-main" style="display: none">
+    <h3 class="popup-title">Оставьте заявку</h3>
+    <span class="popup-subtitle">Оставьте заявку и наши специалисты ответят на все Ваши вопросы.</span>
+    <form class="popup-form">
+
+      <!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Транс 7777">
+			<input type="hidden" name="admin_email" value="trans-7777@yandex.by">
+			<input type="hidden" name="form_subject" value="Новая заявка (попап)">
+			<!-- END Hidden Required Fields -->
+
+
+      <input class="field input" data-name="name" type="text" name="Имя" maxlength="56" placeholder="Ваше имя" required>
+      <input class="field input" id="phone" data-name="phone" type="text" name="Номер телефона" maxlength="19" placeholder="+375 29 123 45 67" required>
+      <textarea class="field popup-textarea" data-name="comment" type="text" name="Комментарий" maxlength="256" rows="6"
+     placeholder="Ваш комментарий"></textarea>
+      <button class="button popup-button" type="submit">Отправить заявку</button>
+    </form>
+  </div>
+
+
+  <div class="white-popup" id="trueModal" style="display: none;">
+    <h3 class="popup-title">Спасибо за заявку!</h3>
+    <span class="popup-subtitle">Скоро мы с вами свяжемся</span>
+    <button class="button popup-button" data-fancybox-close>OK</button>
+  </div>
+
+
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/script-form.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/youtube.js"></script>
   <script>
     $(document).ready(function() {
       $('.hero-slider').slick({
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         pauseOnHover: false,
         draggable: false,
         lazyLoad: true,
@@ -596,7 +668,7 @@
       });
     });    
   </script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<c6f32232-3be2-437f-a52a-ff8763f45dfd>&lang=ru_RU"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=<c6f32232-3be2-437f-a52a-ff8763f45dfd>&lang=ru_RU"></script> -->
   <script>
     ymaps.ready(init);
     function init(){ 
@@ -621,6 +693,13 @@
     myMap.geoObjects.add(myGeoObject);
         }
   </script>
+  <script>
+    $(document).ready(function() {
+      $("#phone").mask("+375 (99) 999-99-99");
+      $(".popup-form #phone").mask("+375 (99) 999-99-99");
+  });    
+  </script>
+
 
 </body>
 </html>
