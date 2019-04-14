@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'Exo 2.0 Regular';
+  font-display: swap;
   src: url("../fonts/Exo20-Regular.eot");
   src: url("../fonts/Exo20-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-Regular.woff") format("woff"), url("../fonts/Exo20-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -8,6 +9,7 @@
 
 @font-face {
   font-family: 'Exo 2.0 Medium';
+  font-display: swap;
   src: url("../fonts/Exo20-Medium.eot");
   src: url("../fonts/Exo20-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-Medium.woff") format("woff"), url("../fonts/Exo20-Medium.ttf") format("truetype");
   font-weight: normal;
@@ -16,6 +18,7 @@
 
 @font-face {
   font-family: 'Exo 2.0 Semibold';
+  font-display: swap;
   src: url("../fonts/Exo20-SemiBold.eot");
   src: url("../fonts/Exo20-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-SemiBold.woff") format("woff"), url("../fonts/Exo20-SemiBold.ttf") format("truetype");
   font-weight: normal;
@@ -24,6 +27,7 @@
 
 @font-face {
   font-family: 'Exo 2.0 Bold';
+  font-display: swap;
   src: url("../fonts/Exo20-Bold.eot");
   src: url("../fonts/Exo20-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo20-Bold.woff") format("woff"), url("../fonts/Exo20-Bold.ttf") format("truetype");
   font-weight: normal;
@@ -36,8 +40,12 @@ body {
   font-size: 16px;
 }
 
-input, button, input:active, select, select:active {
+input, button, input:active, select, select:active, textarea, textarea:active {
   outline: 0;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #edb72b;
 }
 
 a {
@@ -149,12 +157,6 @@ h1, h2, h3 {
   margin: auto;
   padding: 0 15px;
   position: relative;
-}
-
-@media (max-width: 575px) {
-  .container {
-    padding: 0 10px;
-  }
 }
 
 svg {
@@ -403,7 +405,7 @@ svg {
   }
 }
 
-.popup-main {
+.popup-main, .popup-thanks {
   border-radius: 20px;
 }
 
@@ -420,6 +422,10 @@ svg {
   font-family: 'Exo 2.0 Medium', sans-serif;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.popup-subtitle-thanks {
+  width: 100%;
 }
 
 .popup-form {
@@ -491,6 +497,10 @@ svg {
   .popup-button {
     height: 50px;
   }
+}
+
+.nav-active {
+  display: block !important;
 }
 
 .topbar {
@@ -1945,6 +1955,18 @@ svg {
           align-items: center;
 }
 
+.form-button {
+  height: 60px;
+  width: 23%;
+  font-size: 18px;
+}
+
+.form-subtitle {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+
 .field {
   display: block;
   height: 60px;
@@ -1954,18 +1976,6 @@ svg {
   border-radius: 20px;
   font-size: 18px;
   font-family: 'Exo 2.0 Medium', sans-serif;
-}
-
-.field-button {
-  height: 60px;
-  width: 23%;
-  font-size: 18px;
-}
-
-.field-subtitle {
-  display: block;
-  font-size: 14px;
-  text-align: center;
 }
 
 @media (max-width: 991px) {

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="msapplication-TileColor" content="#edb72b">
   <meta name="theme-color" content="#edb72b">
@@ -126,7 +127,7 @@
                   <a href="">Контакты</a>
               </li>
             </ul>
-            <button class="button navbar__button-nav">Быстрый заказ</button>
+            <button class="button navbar__button-nav" data-fancybox data-src="#popup" href="javascript:;">Быстрый заказ</button>
           </nav>
         </div>
         <!-- /.navbar-wrap -->
@@ -525,7 +526,7 @@
   <section class="section map">
     <div class="container">
       <h2 class="section-title section__title">Наши контакты</h2>
-      <div id="map" class="map-wrap"></div>
+      <div id="map" class="map-wrap"><script src="https://api-maps.yandex.ru/2.1/?apikey=<c6f32232-3be2-437f-a52a-ff8763f45dfd>&lang=ru_RU"></script></div>
       <div class="map-info">
         <div class="map-info__item">
           <span class="map-info-title">Наш телефон в Речице:</span>
@@ -561,14 +562,14 @@
     <div class="container">
       <div class="menu-large-wrap">
         <a href="#" class="menu-large__item">
-          <img src="../img/truck-crane.svg" alt="truck" class="menu-large-icon">
+          <img src="img/truck-crane.svg" alt="truck" class="menu-large-icon">
           <div class="menu-large-title-wrap">
             <span class="menu-large-title">Перейти в каталог техники в аренду</span>
             <div class="menu-large-title-icon"><img alt="next" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVHhe7ds7SiRRHEbxFhFEU1+jTmRgYuJrxscGTASTcQmCC9DEDbgFc8ENmBgbm41vc0HwlZo4p4SBpqlbkdz/hTo/OEFlF77uKpqmOpIkSZIkSZIkSZIkSZIkSfpmg3RKH3RGo6RA2/TZ1V9ylECb1D3I/1HGSAH66JgcpSD9dEK9o1ySowRpGmWcFCA1yhU5SpCmUSZIARylQKlRrslRgjSN8oMUwFEKlBrlhiZJARylQKlRbslRgjSNMkUK4CgFSo1yR44SpGmUaVKA1Cj35ChBUqM8UFGjDNMf2mlBu/RIdaP8pHADdEG9B2xj1e0r/EE/R3WHa2vnFGqI6r7CbeyNflG4GTqko5ZU9wF8p3VSZvvkGIVIjbFGyqxujOqZ4RgBHKMgqTFWSZmlxlghZeYYBUmN8ZuUWWqMIn6Bt01qjGVSZqkxlkiZ1Y3xSo4RwDEKkhpjkZRZ3Rgv5BgBHKMgqTEWSJntUe8Yz+QYATbIMQpyQL1jzJOCzFL1d2s1xhM5RgGqdwW3aOTrSpIkSZIkSZIkSZIkSZIkqeU6nX+M5fKytvZh6QAAAABJRU5ErkJggg=="></div>
           </div>
         </a> <!-- /.menu-large__item -->
         <a href="#" class="menu-large__item">
-          <img src="../img/worker.svg" alt="worker" class="menu-large-icon">
+          <img src="img/worker.svg" alt="worker" class="menu-large-icon">
           <div class="menu-large-title-wrap">
             <span class="menu-large-title">Выбрать вид услуг или работ</span>
             <div class="menu-large-title-icon"><img alt="next" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVHhe7ds7SiRRHEbxFhFEU1+jTmRgYuJrxscGTASTcQmCC9DEDbgFc8ENmBgbm41vc0HwlZo4p4SBpqlbkdz/hTo/OEFlF77uKpqmOpIkSZIkSZIkSZIkSZIkSfpmg3RKH3RGo6RA2/TZ1V9ylECb1D3I/1HGSAH66JgcpSD9dEK9o1ySowRpGmWcFCA1yhU5SpCmUSZIARylQKlRrslRgjSN8oMUwFEKlBrlhiZJARylQKlRbslRgjSNMkUK4CgFSo1yR44SpGmUaVKA1Cj35ChBUqM8UFGjDNMf2mlBu/RIdaP8pHADdEG9B2xj1e0r/EE/R3WHa2vnFGqI6r7CbeyNflG4GTqko5ZU9wF8p3VSZvvkGIVIjbFGyqxujOqZ4RgBHKMgqTFWSZmlxlghZeYYBUmN8ZuUWWqMIn6Bt01qjGVSZqkxlkiZ1Y3xSo4RwDEKkhpjkZRZ3Rgv5BgBHKMgqTEWSJntUe8Yz+QYATbIMQpyQL1jzJOCzFL1d2s1xhM5RgGqdwW3aOTrSpIkSZIkSZIkSZIkSZIkqeU6nX+M5fKytvZh6QAAAABJRU5ErkJggg=="></div>
@@ -576,7 +577,7 @@
         </a>
         <!-- /.menu-large__item -->
         <a data-fancybox data-src="#popup" href="javascript:;" class="menu-large__item">
-          <img src="../img/smartphone.svg" alt="smartphone" class="menu-large-icon">
+          <img src="img/smartphone.svg" alt="smartphone" class="menu-large-icon">
           <div class="menu-large-title-wrap">
             <span class="menu-large-title">Заказать аренду техники или работ</span>
             <div class="menu-large-title-icon"><img alt="next" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVHhe7ds7SiRRHEbxFhFEU1+jTmRgYuJrxscGTASTcQmCC9DEDbgFc8ENmBgbm41vc0HwlZo4p4SBpqlbkdz/hTo/OEFlF77uKpqmOpIkSZIkSZIkSZIkSZIkSfpmg3RKH3RGo6RA2/TZ1V9ylECb1D3I/1HGSAH66JgcpSD9dEK9o1ySowRpGmWcFCA1yhU5SpCmUSZIARylQKlRrslRgjSN8oMUwFEKlBrlhiZJARylQKlRbslRgjSNMkUK4CgFSo1yR44SpGmUaVKA1Cj35ChBUqM8UFGjDNMf2mlBu/RIdaP8pHADdEG9B2xj1e0r/EE/R3WHa2vnFGqI6r7CbeyNflG4GTqko5ZU9wF8p3VSZvvkGIVIjbFGyqxujOqZ4RgBHKMgqTFWSZmlxlghZeYYBUmN8ZuUWWqMIn6Bt01qjGVSZqkxlkiZ1Y3xSo4RwDEKkhpjkZRZ3Rgv5BgBHKMgqTEWSJntUe8Yz+QYATbIMQpyQL1jzJOCzFL1d2s1xhM5RgGqdwW3aOTrSpIkSZIkSZIkSZIkSZIkqeU6nX+M5fKytvZh6QAAAABJRU5ErkJggg=="></div>
@@ -620,7 +621,7 @@
   </div>
 
 
-  <div class="white-popup" id="trueModal" style="display: none;">
+  <div class="popup-thanks" id="trueModal" style="display: none;">
     <h3 class="popup-title">Спасибо за заявку!</h3>
     <span class="popup-subtitle">Скоро мы с вами свяжемся</span>
     <button class="button popup-button" data-fancybox-close>OK</button>
@@ -629,77 +630,10 @@
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/script-form.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/youtube.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.hero-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        draggable: false,
-        lazyLoad: true,
-        focusOnSelect: true,
-        prevArrow: $('.arrow-left'),
-        nextArrow: $('.arrow-right')
-      });
-      $('.comment-wrap').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        draggable: false,
-        lazyLoad: true,
-        focusOnSelect: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        prevArrow: $('.arrow-comment-left'),
-        nextArrow: $('.arrow-comment-right'),
-        responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          }
-        ]
-      });
-    });    
-  </script>
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=<c6f32232-3be2-437f-a52a-ff8763f45dfd>&lang=ru_RU"></script> -->
-  <script>
-    ymaps.ready(init);
-    function init(){ 
-        var myMap = new ymaps.Map("map", {
-          center: [52.363968, 30.367162],
-          zoom: 14
-        });
-        var myGeoObject = new ymaps.GeoObject({
-        geometry: {
-          type: "Point", // тип геометрии - точка
-          coordinates: [52.363968, 30.367162] // координаты точки
-      },
-      properties: {
-      iconCaption: "Компания ТРАНС 7777",
-          balloonContentHeader: "ТРАНС 7777",
-          balloonContentBody: "Транспортные услуги в Речице",
-  
-        }
-    });
-
-    // Размещение геообъекта на карте.
-    myMap.geoObjects.add(myGeoObject);
-        }
-  </script>
-  <script>
-    $(document).ready(function() {
-      $("#phone").mask("+375 (99) 999-99-99");
-      $(".popup-form #phone").mask("+375 (99) 999-99-99");
-  });    
-  </script>
-
+  <script src="js/main.js"></script>
 
 </body>
 </html>
